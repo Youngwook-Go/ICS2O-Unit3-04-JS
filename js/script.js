@@ -29,5 +29,5 @@ function submit() {
 
   // output
   document.getElementById("celcius").innerHTML =
-    "The temperature with celcius is : " + celcius.toFixed(2) + "°C"
+    "The temperature with celcius is : " + celcius.toFixed(2) + " °C"
 }
