@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: rgb(154 211 232);
+  background-color: lightsteelblue;
 }
 
 p {
@@ -31,9 +31,4 @@ p {
   font-weight: bold;
   font-size: 1.5rem;
   padding-top: 15pt;
-}
-
-img {
-  float: right;
-  margin-right: 15px;
 }

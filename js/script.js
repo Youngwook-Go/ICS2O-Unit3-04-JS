@@ -11,13 +11,23 @@
  */
 
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Template-PWA/sw.js", {
-    scope: "/ICS2O-Template-PWA/",
+  navigator.serviceWorker.register("/ICS2O-Unit3-04-JS/sw.js", {
+    scope: "/ICS2O-Unit3-04-JS/",
   })
 }
 
-// function description
+// fahrenheit to celcius
 
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+function submit() {
+  // input
+  const fahrenheit = parseFloat(
+    document.getElementById("fahrenheit-temperature").value
+  )
+
+  // process
+  const celcius = (fahrenheit - 32) * (5 / 9)
+
+  // output
+  document.getElementById("celcius").innerHTML =
+    "The temperature with celcius is : " + celcius.toFixed(2) + "°C"
 }
